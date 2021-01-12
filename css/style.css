@@ -1,0 +1,130 @@
+body {
+    text-align: center;
+    font-family: Arial;
+    margin: 0;
+    padding: 20px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.mainInformation {
+    background-color: #3b3f45;
+    padding: 34px 0 98px 0;
+}
+
+.titleStyle {
+    font-size: 32px;
+    margin: 0 0 0 0;
+}
+
+.subtitleStyle {
+    font-size: 22px;
+    margin: 5px 0 0 0;
+    font-weight: 400;
+}
+
+.header {
+    background-color: #4a4f56;
+    padding: 20px 0 20px 0;
+    color: #eb7e7f;
+}
+
+.checkboxButton {
+    text-align: left;
+    font-size: 24px;
+    padding: 12.5px 27px;
+    color: #fff;
+    display: inline-block;
+    width: 100%;
+    transition: all .1s ease-in;
+    border-top: 3px solid transparent; 
+    border-bottom: 3px solid transparent;
+}
+
+.listStyle label:nth-child(odd) .checkboxButton {
+    background-color: #88839e;
+}
+
+.listStyle label:nth-child(even) .checkboxButton {
+    background-color: #7a7593;
+}
+
+.listStyle label .checkboxButton:hover {
+    background-color: #625e77;  
+    border-top: 3px solid #fff; 
+    border-bottom: 3px solid #fff;
+    cursor: pointer;
+     
+}
+
+.container {
+    max-width: 720px;
+    margin: 0 auto;
+}
+
+.checkboxDescription {
+    color: #c0cbd6;
+    font-size: 14px;
+    position: relative;
+    bottom: 2px;
+    right: 2px;
+}
+
+input:checked + span {
+    text-decoration: line-through;
+    color: #a3a0b5;
+}
+
+.submitStyle {  
+    background-color: #4a4f56;
+    outline: none;
+    border: none;
+    color: #eb7e7f;
+    width: 100%;
+    font-size: 23px;
+    margin: 35px 0 0 0;
+    padding: 20px 0;
+}
+
+.submitStyle:hover {
+    cursor: pointer;
+    background-color: #6c7178;
+}   
+
+.submitStyle:active {
+    background-color: #eb7e7f;
+    color: #6c7178;
+}
+
+input[type="checkbox"] {
+    display: none;
+}
+
+.checkboxStyle {
+    display: inline-block;
+    width: 22px;
+    height: 22px;
+    border: 1px solid #b2b2b2;
+    background-color: #dedede;
+    position: relative;
+    right: 13px;
+    top: 2px;
+}
+
+.checkboxStyle:before {
+    content: "";
+    position: absolute;
+    top: 3px;
+    left: 2px;
+    border-left: 5px solid transparent;
+    border-bottom: 5px solid transparent;
+    width: 12px;
+    height: 4.5px;
+    transform: rotate(-50deg);
+}
+
+input:checked + span .checkboxStyle:before {
+    border-color: #424242;
+}
