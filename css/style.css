@@ -4,6 +4,11 @@ body {
     margin: 0;
     padding: 20px;
 }
+.listStyle {
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    user-select: none;
+}
 
 * {
     box-sizing: border-box;
@@ -11,7 +16,7 @@ body {
 
 .mainInformation {
     background-color: #3b3f45;
-    padding: 34px 0 98px 0;
+    padding: 34px 0 94px 0;
 }
 
 .titleStyle {
